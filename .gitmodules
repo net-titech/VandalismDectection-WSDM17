@@ -1,0 +1,3 @@
+[submodule "wsdmcup17-wdvd-baseline-feature-extraction"]
+	path = wsdmcup17-wdvd-baseline-feature-extraction
+	url = git@github.com:Zepx/wsdmcup17-wdvd-baseline-feature-extraction.git
