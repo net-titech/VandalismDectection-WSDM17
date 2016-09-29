@@ -7,7 +7,7 @@ from os.path import isfile
 def main():
     md5_url = 'http://www.uni-weimar.de/medien/webis/corpora/corpus-wdvc-16/checksums.md5'
     data_dir = '../data/'
-    data_files = [f for f in listdir(data_dir) if isfile(f)]
+    data_files = [f for f in listdir(data_dir)]
     with urlopen(md5_url) as response:
         md5list = response.read()
     md5string = md5list.decode()
@@ -31,3 +31,6 @@ def filemd5(fname):
         for chunk in iter(lambda: f.read(4096), b''):
             hash_md5.update(chunk)
     return hash_md5.hexdigest()
+
+if __name__ == '__main__':
+    main()

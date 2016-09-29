@@ -12,14 +12,17 @@ def main():
         _, rooturl, rootname, ext, directory = argv
     for year in years:
         for month in months:
-            request_url = rooturl + year + '_' + month + ext
+            request_url = rooturl + rootname + year + '_' + month + ext
             try:
+                print('Downloading', rootname + year + '_' + month + ext)
                 with urlopen(request_url) as response:
                   data = response.read()
                 with open(directory+rootname+year+'_'+month+ext, 'wb') as f:
                     f.write(data)
                     print('Write ' + rootname+year+'_'+month+ext, 'wb')
+                print('Success!')
             except:
+                print('Failed')
                 continue
 
 if __name__ == '__main__':
