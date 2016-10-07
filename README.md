@@ -27,3 +27,20 @@ detect vandalism in Wikidata dumps.
 1. 27th: List of vandalism detection papers; setup working environments; study wikidata dumps; analyze WSDM'17 score metrics.
 2. 28th: Paper reading; discussion about Random Forest and features selection; focusing on Random Forest model and its variations.
 3. 29th: Run the provided reference paper's code on the lab's machine; study related techniques to RR; study NN techiqnues that complement RR.
+4. 30th: Review week 1.
+
+### Baseline model: 2016/10/03 - 2016/10/07
+
+#### Objective
+
+1. Preprocess wikimedia data, study previous features extration code.
+2. Implement simple random forest model based on [1].
+3. Working baseline model and sketch of neural network model.
+
+#### Daily log
+
+1. 3rd: Features from the baseline model [1] are all hand-picked. 
+2. 4th: Meeting cancelled.
+3. 5th: Meeting cancelled.
+4. 6th: Some features are missing compared to the original implementation [1]. Using only 29 available features now yeilds 0.02 on ROC. This result is extremely low. 
+5. 7th:
