@@ -42,5 +42,5 @@ detect vandalism in Wikidata dumps.
 1. 3rd: Features from the baseline model [1] are all hand-picked. 
 2. 4th: Meeting cancelled.
 3. 5th: Meeting cancelled.
-4. 6th: Some features are missing compared to the original implementation [1]. Using only 29 available features now yeilds 0.02 on ROC. This result is extremely low. 
+4. 6th: Some features are missing compared to the original implementation [1]. Using only 29 available features now yields 0.02 on ROC. This result is extremely low. 
 5. 7th:
